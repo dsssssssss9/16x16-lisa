@@ -43,11 +43,9 @@ matrix.show()
 basic.showIcon(IconNames.House)
 basic.forever(function () {
     zeichne_kurve()
-    // callimatrix.callimatrix_show()
     matrix.show()
     if (animation) {
         basic.pause(20)
-        // callimatrix.callimatrix_del()
         matrix.clear()
         delta_var = delta_var + schritt_animation
     }
