@@ -3,8 +3,8 @@ function zeichne_kurve () {
     y = 0
     t = 0
     while (t < pi * 2) {
-        x = Math.round(3 * Math.sin(a * t)) + 3
-        y = 7 - (Math.round(3 * Math.sin(b * t - delta_fix - delta_var)) + 3)
+        x = Math.round(7 * Math.sin(a * t)) + 8
+        y = 7 - (Math.round(7 * Math.sin(b * t - delta_fix - delta_var)) + 0)
         // callimatrix.SetMatrixColorbright(0x0000ff, x, y, cbrightness.hp1)
         matrix.setPixel(x, y, neopixel.colors(NeoPixelColors.Blue))
         t = t + schritt_kurve
