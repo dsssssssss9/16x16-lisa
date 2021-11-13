@@ -38,6 +38,7 @@ DigitalPin.P2,
 16,
 NeoPixelMode.RGB
 )
+matrix.Brightness(32)
 matrix.clear()
 matrix.show()
 basic.showIcon(IconNames.House)
