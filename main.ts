@@ -20,14 +20,15 @@ let delta_fix = 0
 let b = 0
 let a = 0
 let pi = 0
+led.setBrightness(32)
 let einzelschritt = false
 pi = 3.1415926
-a = 1
-b = 1
+a = 2
+b = 4
 delta_fix = 0
 delta_var = 0
 let animation = true
-let anzahl_punkte = 48
+let anzahl_punkte = 64
 let anzahl_frames = 24
 schritt_kurve = pi * 2 / anzahl_punkte
 let schritt_animation = pi * 2 / Math.min(a, b) / anzahl_frames
@@ -38,10 +39,12 @@ DigitalPin.P2,
 16,
 NeoPixelMode.RGB
 )
-matrix.Brightness(32)
+matrix.Brightness(8)
 matrix.clear()
 matrix.show()
 basic.showIcon(IconNames.House)
+basic.pause(1000)
+basic.clearScreen()
 basic.forever(function () {
     zeichne_kurve()
     matrix.show()
